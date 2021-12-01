@@ -1,0 +1,27 @@
+#golang 1.14.1
+FROM golang:1.14.1-alpine3.11
+
+#docker container ENV setting
+#ENV MYSQL_USER mysql_id > danger > another file
+
+#main.go copy image creating)
+#COPY [ORIGINALFILE_OR_DIR ] [CONTAINER_DIR]
+COPY ./main.go ./
+
+#container in RUN (image creating)
+RUN go build -o ./go-app ./main.go
+
+#VOLUME is linking folders inside and outside a folder
+
+#account nobody
+USER nobody
+
+#define the command to be executed by the container
+ENTRYPOINT ["./go-app"]
+
+#command to use when running the container 
+#CMD [COMMAND]
+
+#***
+#docker build -t [IMAGE NAME]
+
