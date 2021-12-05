@@ -4,7 +4,7 @@ Module List
 
 ---
 ### TODO List
-- [ ] -
+- [O] init deploy shell script 
 
 ---
 ### Package Architecture
