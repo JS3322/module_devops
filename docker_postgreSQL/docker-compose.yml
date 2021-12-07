@@ -1,0 +1,26 @@
+version: "3"
+services:
+  postgresql:
+    image: postgres:13
+    restart: always
+    volumes:
+      - ./postgresql/data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: "password"
+      TZ: "Asia/Seoul"
+  node:
+    image: node:14
+    working_dir: /usr/src/app
+    environment:
+      # - NODE_ENV=development
+      - DB_USER=postgres
+      - DB_PW=password
+      - DB_TYPE=postgres
+      - DB_HOST=postgresql
+    volumes:
+      - ./src:/usr/src/app
+    ports:
+      - 3000:3000
+    command: bash -c "npm install && npm start"
