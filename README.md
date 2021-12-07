@@ -3,20 +3,15 @@ Module List
 ```
 
 ---
-### TODO List
-- [O] init deploy shell script 
+### TODO List | Route
+- [x] init deploy shell script | script_setting
 
 ---
-### Package Architecture
-#### Module Name | Module Explanation | Route
-1. - | - | -
-
----
-## Stay in touch
+### Stay in touch
 - Developer - [JS KIM](https://cleancode.kr)
 
 ---
-## License
+### License
 [MIT licensed](LICENSE)
 
 ---
