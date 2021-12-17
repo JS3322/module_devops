@@ -4,7 +4,10 @@ Module List
 
 ---
 ### TODO List | Route
-- [x] init deploy shell script | script_setting
+- [x] log server docker nginx | docker_nginx
+- [x] python docker flask | docker_flask
+- [x] golang1.17 docker hotreload | docker_golang1.17_hotreload
+- [x] mysql5.7 docker and script | docker_mysql5.7
 
 ---
 ### Stay in touch
