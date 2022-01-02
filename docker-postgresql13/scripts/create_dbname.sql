@@ -1,2 +1,0 @@
-CREATE USER cleancode PASSWORD 'cleancode' SUPERUSER CREATEDB;
-CREATE DATABASE test001 OWNER cleancode;
