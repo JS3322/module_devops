@@ -18,6 +18,7 @@ CMD ["npm", "run", "start"]
 EXPOSE 3000
 
 #executable container with compile files
-FROM alpine:3.15
-COPY --from=builder /go-app .
-ENTRYPOINT ["./go-app"]
+# FROM alpine:3.15
+# COPY --from=builder /home/node/app .
+# CMD ["npm", "run", "start"]
+# ENTRYPOINT ["./"]
